@@ -1,4 +1,4 @@
-import brcyptLib from '../helpers/bcryptLib';
+
 
 class Service {
     constructor(model){
@@ -8,7 +8,6 @@ class Service {
 
     async insert(data){
         try{
-            data.password = await brcyptLib.generateHashedPassword(data.password)
             let item = await this.model.create(data);
             if(item){
                 return {
