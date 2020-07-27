@@ -12,6 +12,7 @@ class UserRouter {
         this.router.get('/all',UserController.getAll);
         this.router.delete('/delete',UserController.delete);
         this.router.put('/update',UserController.update);
+        this.router.post('/login',UserController.login);
         return this.router;
     }
     
