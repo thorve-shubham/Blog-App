@@ -8,6 +8,7 @@ class UserController extends Controller{
     constructor(service){
         super(service);
     }
+
 }
 
 export default new UserController(userService);

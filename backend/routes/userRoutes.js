@@ -9,6 +9,9 @@ class UserRouter {
 
     getRoutes(){
         this.router.post('/add',UserController.insert);
+        this.router.get('/all',UserController.getAll);
+        this.router.delete('/delete',UserController.delete);
+        this.router.put('/update',UserController.update);
         return this.router;
     }
     
