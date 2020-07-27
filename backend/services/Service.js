@@ -3,9 +3,6 @@
 class Service {
     constructor(model){
         this.model = model;
-        this.insert = this.insert.bind(this);
-        this.delete = this.delete.bind(this);
-        this.update = this.update.bind(this);
     }
 
     async insert(data){
