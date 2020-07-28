@@ -1,5 +1,4 @@
 import mongoose from 'mongoose';
-import unique_identifier from 'mongoose-unique-validator';
 
 class Blog {
     initSchema(){
@@ -33,7 +32,9 @@ class Blog {
     }
 
     getInstance(){
-        this.getInstance();
-        return mongoose.model('blogs')
+        this.initSchema();
+        return mongoose.model('blogs');
     }
 }
+
+export default Blog

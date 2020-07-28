@@ -4,7 +4,6 @@ import UserController from '../controller/UserController';
 class UserRouter {
     constructor(){
         this.router = express.Router();
-        this.getRoutes = this.getRoutes.bind(this);
     }
 
     getRoutes(){
