@@ -10,6 +10,7 @@ class BlogRoutes {
         this.router.post('/add',BlogController.insert);
         this.router.put('/update',BlogController.update);
         this.router.delete('/delete',BlogController.delete);
+        this.router.get('/getById/:id',BlogController.getById);
         return this.router;
     }
 }
